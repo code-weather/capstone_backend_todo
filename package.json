@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "## Project Summary",
+  "main": "index.js",
+  "engines": {
+    "node": "17.0.1",
+    "npm": "8.1.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-weather/capstone_test_todo_backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/code-weather/capstone_test_todo_backend/issues"
+  },
+  "homepage": "https://github.com/code-weather/capstone_test_todo_backend#readme"
+}
