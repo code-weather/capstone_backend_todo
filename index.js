@@ -1,5 +1,4 @@
 const express = require("express");
-const morgan = require("morgan");
 const app = express();
 const cors = require("cors");
 const pool = require("./db");
@@ -11,7 +10,6 @@ const PORT = process.env.PORT || 4000;
 
 
 //middleware
-app.use(morgan());
 app.use(cors());
 app.use(express.json()); // allows us to access req.body
 
